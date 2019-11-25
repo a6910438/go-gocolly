@@ -1,0 +1,14 @@
+log:
+  level: 0
+db:
+  host: 192.168.0.210
+  port: 3306
+  user: test
+  password: 123456
+  dbname: news
+
+bi_shijie_url: https://www.bishijie.com/
+
+tokenview_url: https://tokenview.com/
+
+b_btc_url: https://www.8btc.com/

@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  reptile_spider:
+    image: "reptile_spider:latest"
+    restart: "no"
+    env_file:
+      - "./env/.env"
+    volumes:
+      - /galaxy/app/reptile/:/galaxy/app/reptile/
+    network_mode: "host"
+    entrypoint: /galaxy/app/reptile/build/spider  -C /galaxy/app/reptile/build/config.yaml
+    container_name: "spider"
